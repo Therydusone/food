@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 const SearchBar = () => {
+    const [term, setTerm] = useState('')
     return (
         <View style ={styles.backgroundStyle}>
             <Feather name='search' style={styles.iconStyle} />
